@@ -8,17 +8,25 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v2
 
-      - name: Use Node.js 18.17.0 and yarn
+      - name: Use Node.js 18.17.0
         uses: actions/setup-node@v3
         with:
           node-version: "18.17.0"
           registry-url: "https://registry.yarnpkg.com/"
 
-      - name: Install dependencies with yarn
-        run: yarn install
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
-      - name: Build project with Next.js and yarn
-        run: yarn build
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build static files
+        run: npm run build
         env:
           CI: false
 
