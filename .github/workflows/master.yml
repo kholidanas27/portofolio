@@ -23,7 +23,7 @@ jobs:
           CI: false
 
       - name: List output files
-        run: find . -name 'out' -type d
+        run: find . -name 'build' -type d
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
@@ -31,5 +31,5 @@ jobs:
           server: ftp.strawhatdev.site
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
-          local-dir: out/
+          local-dir: build/
           server-dir: /public_html/apps/portofolio/
