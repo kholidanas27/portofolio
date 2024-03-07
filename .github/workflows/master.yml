@@ -18,9 +18,12 @@ jobs:
         run: yarn install
 
       - name: Build project with Next.js and yarn
-        run: yarn export
+        run: yarn build
         env:
           CI: false
+
+      - name: Export project with Next.js and yarn
+        run: yarn export
 
       - name: List output files
         run: find . -name 'out' -type d
