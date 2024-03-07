@@ -15,7 +15,7 @@ export const greetings: GreetingsType = {
   name: "Kholid Anas A.",
   title: "Hi all, I'm Kholid Anas Amrulloh",
   description:
-    "I'm a passionate Full Stack web developer with experience developing Full Stack web applications with Python, Django, React.js, and Cloud Technologies. I am strongly interested in learning new technologies and implementing them in my projects. I'm a self-motivated and hardworking individual who is always ready to learn new things and work in a team.",
+    "I'm a passionate Full Stack web developer with experience developing Full Stack web applications with Laravel, Lumen, Java, AngularJs, ReactJs, ExpressJs, Symfony Framework and VueJs. I am strongly interested in learning new technologies and implementing them in my projects. I'm a self-motivated and hardworking individual who is always ready to learn new things and work in a team.",
   resumeLink: "#",
 };
 
