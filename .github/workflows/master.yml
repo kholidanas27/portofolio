@@ -1,0 +1,35 @@
+on: push
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 18.17.0 and yarn
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18.17.0"
+          registry-url: "https://registry.yarnpkg.com/"
+
+      - name: Install dependencies with yarn
+        run: yarn install
+
+      - name: Build project with Next.js and yarn
+        run: yarn export
+        env:
+          CI: false
+
+      - name: List output files
+        run: find . -name 'out' -type d
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: ftp.strawhatdev.site
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
+          local-dir: out/
+          server-dir: /public_html/apps/portofolio/
