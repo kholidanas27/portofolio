@@ -130,10 +130,10 @@ export const SkillBars: SkillBarsType[] = [
 export const educationInfo: EducationType[] = [
   {
     schoolName: "University of Amikom Yogyakarta",
-    subHeader: "Bachelor of Science in Computer Science",
+    subHeader: "Associate Degree of Informatics Engineering",
     duration: "September 2018 - Juli 2021",
     desc: "",
-    grade: "Grade A",
+    grade: "3.67 / 4.0",
     descBullets: [], // Array of Strings
   },
 ];
@@ -152,10 +152,6 @@ export const experience: ExperienceType[] = [
     companyLogo: "/img/icons/common/duseca_software_logo.jpeg",
     date: "Jan 2022 - Sept 2023",
     desc: "Crafted robust mobile application backends employing Django, Python, and REST APIs. Leveraged Django REST Framework, PostgreSQL, AWS, Firebase, Stripe, and WebSocket for efficient development. Collaborated across teams to surpass client expectations. Designed intuitive UIs, empowering clients to effortlessly manage their applications with a visually captivating interface.",
-    // descBullets: [
-    // 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
-    // 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    // ],
   },
   {
     role: "Full Stack Developer",
