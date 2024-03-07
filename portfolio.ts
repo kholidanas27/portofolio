@@ -48,12 +48,12 @@ export const skillsSection: SkillsSectionType = {
       ],
       softwareSkills: [
         {
-          skillName: "Python",
-          iconifyTag: "logos:python",
+          skillName: "Laravel",
+          iconifyTag: "logos:laravel",
         },
         {
-          skillName: "Django",
-          iconifyTag: "vscode-icons:file-type-django",
+          skillName: "PHP",
+          iconifyTag: "logos:php",
         },
         {
           skillName: "JavaScript",
@@ -68,20 +68,44 @@ export const skillsSection: SkillsSectionType = {
           iconifyTag: "vscode-icons:file-type-light-next",
         },
         {
-          skillName: "AWS",
-          iconifyTag: "logos:aws",
+          skillName: "AngularJs",
+          iconifyTag: "vscode-icons:file-type-ng-component-ts",
         },
         {
-          skillName: "Heroku",
-          iconifyTag: "logos:heroku-icon",
+          skillName: "Talwind CSS",
+          iconifyTag: "vscode-icons:file-type-tailwind",
         },
         {
-          skillName: "Github",
+          skillName: "Symfony",
+          iconifyTag: "vscode-icons:file-type-light-symfony",
+        },
+        {
+          skillName: "Codeigniter",
+          iconifyTag: "logos:codeigniter",
+        },
+        {
+          skillName: "VueJs",
+          iconifyTag: "vscode-icons:file-type-vue",
+        },
+        {
+          skillName: "Java",
+          iconifyTag: "vscode-icons:file-type-java",
+        },
+        {
+          skillName: "MySQL",
+          iconifyTag: "vscode-icons:file-type-mysql",
+        },
+        {
+          skillName: "PostgreSQL",
+          iconifyTag: "vscode-icons:file-type-pgsql",
+        },
+        {
+          skillName: "Github Actions",
           iconifyTag: "akar-icons:github-fill",
         },
         {
-          skillName: "Docker",
-          iconifyTag: "logos:docker-icon",
+          skillName: "Gitlab CI/CD",
+          iconifyTag: "vscode-icons:file-type-gitlab",
         },
       ],
     },
@@ -105,9 +129,9 @@ export const SkillBars: SkillBarsType[] = [
 
 export const educationInfo: EducationType[] = [
   {
-    schoolName: "University of Central Punjab",
+    schoolName: "University of Amikom Yogyakarta",
     subHeader: "Bachelor of Science in Computer Science",
-    duration: "September 2017 - April 2020",
+    duration: "September 2018 - Juli 2021",
     desc: "",
     grade: "Grade A",
     descBullets: [], // Array of Strings
