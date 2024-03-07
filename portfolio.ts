@@ -104,7 +104,7 @@ export const skillsSection: SkillsSectionType = {
           iconifyTag: "akar-icons:github-fill",
         },
         {
-          skillName: "Gitlab CI/CD",
+          skillName: "Gitlab CI CD",
           iconifyTag: "vscode-icons:file-type-gitlab",
         },
       ],
