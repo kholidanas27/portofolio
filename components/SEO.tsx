@@ -5,7 +5,7 @@ import { seoData } from "../portfolio";
 function SEO() {
   return (
     <Head>
-      <title>{seoData.title}</title>
+      <title lang="en">{seoData.title}</title>
       <meta name="title" content={seoData.title} />
       <meta name="author" content={seoData.author} />
       <meta name="description" content={seoData.description} />
