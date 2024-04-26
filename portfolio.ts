@@ -206,6 +206,11 @@ export const projects: ProjectType[] = [
     link: "https://hooliganculture.com/",
   },
   {
+    name: "Innovation Award",
+    desc: "A Landing Page Platform, where can create innovation and questionnaire.",
+    link: "https://sinergi-microsite.qc.qtasnim.com/",
+  },
+  {
     name: "Maghfirah Travel",
     desc: "A Ecommerce Platform, where shopping meets the future! With HandCash BitcoinSV integration, you can authenticate and purchase products with ease and confidence.",
     link: "https://maghfirah.com/",
